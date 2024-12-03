@@ -37,12 +37,17 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        Hi, I'm Nina Buscemi. I'm a certified UX designer with a B.A. in Graphic Design.
+        I took various design classes including graphic, web, human-centered, motion graphics, and illustrations class.
+        I love expressing my eye for creativity through designing visual languages and solving complex problems.
+        As a designer, I bring a creative and analytical approach to finding solutions for products that best fit the user's needs/goals
+        for a great first-hand experience. Empathy, curiousity, and skilled attention to detail define my competitive nature.
+
+        How did I get started?
+        When I was a teenager, I explored Photoshop using different tools and special effects. I designed and coded pages for Tumblr blogs,
+        created logos, and banners, and even made custom backgrounds. This is how I learned to set aside my ego and create an experience
+        that represents the best solution for the client's needs. In the future, I will continue improving my creative skills as
+        a designer and working hard to find the best solutions for users by using my research, wireframing, and prototyping skills.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
