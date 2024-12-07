@@ -124,32 +124,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Internship UX/UI Design',
+    company_name: 'Oakland University',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Sep 2020 - Dec 2020',
+  },
+
+     {
+    title: "Bachelor's Degree in Graphic Design",
+    company_name: 'Oakland University',
+    icon: microverse, // Replace with a suitable education-related icon
+    iconBg: '#292929',
+    date: 'Sep 2016 - May 2020',
+    type: 'education',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Internship Graphic Designer',
+    company_name: 'Ascension Macomb Hospital',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Jan 2021 - March 2021',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'UX/UI design Certification',
+    company_name: 'CareerFoundry',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'May 2021 - Oct 2022',
+    type: 'education',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Zouliful Jewelry',
+    company_name: 'Graphic and UX UI designer',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Sep 2022 - Sep 2023',
+  },
+    {
+    title: 'Full Stack Web Development Certification',
+    company_name: 'Michigan State University',
+    icon: microverse,
+    iconBg: '#292929',
+    date: 'May 2024',
+    type: 'education',
+  },
+  {
+    title: 'Freelance UX/UI Designer',
+    company_name: 'Warren Podiatry',
+    icon: dcc,
+    iconBg: '#333333',
+    date: 'June 2023 - Present',
   },
 ];
 

@@ -113,7 +113,7 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Shaquille image with positioning */}
+        {/* Nina image with positioning */}
         <div>
           <img
             className="absolute bottom-0 ml-[50vw] 
