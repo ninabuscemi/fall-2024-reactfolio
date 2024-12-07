@@ -291,6 +291,8 @@ const projects = [
     repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
     demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
   },
+
+  
 ];
 
 export { services, technologies, experiences, projects };
