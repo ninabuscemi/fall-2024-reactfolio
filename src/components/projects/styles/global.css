@@ -1,0 +1,176 @@
+/* Importing Poppins font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Including TailwindCSS base, components, and utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font declarations for the project */
+@font-face {
+  font-family: 'Arenq';
+  src: url('./fonts/arenq.otf');
+}
+
+@font-face {
+  font-family: 'Mova';
+  src: url('./fonts/mova.otf');
+}
+
+@font-face {
+  font-family: 'Beckman';
+  src: url('./fonts/beckman.otf');
+}
+
+@font-face {
+  font-family: 'Overcame Bold';
+  src: url('./fonts/overcame-bold.woff');
+}
+
+@font-face {
+  font-family: 'Overcame Outline';
+  src: url('./fonts/overcame-outline.woff');
+}
+
+/* Global style resets and behavior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in an element's total width/height */
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+ /* Suggests a dark theme to the browser */
+}
+
+/* Navigation link hover underline effect */
+.nav-links::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #292929;
+  margin: auto;
+  transition: 0.5s; /* Smoothly animates the underline */
+}
+
+/* Expands underline on hover */
+.nav-links:hover::after {
+  width: 70%;
+}
+
+/* Styling for specific sections with unique offsets and sizes */
+#about {
+  margin-left: -24px;
+  font-size: 100px;
+}
+
+#projects {
+  margin-left: -2px;
+  font-size: 100px;
+}
+
+#contact {
+  margin-left: -20px;
+  font-size: 95px;
+  letter-spacing: -2px; /* Adjusts space between letters */
+}
+
+/* Hero section heading styles */
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Utility class for hash-linked sections with offset for smooth scrolling */
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+/* Vertical timeline gradient background effect */
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: rgb(66, 66, 66);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 66, 66, 0.8) 40%,
+    rgba(234, 234, 236, 0.45) 100%
+  );
+}
+
+/* Styling for vertical timeline icons */
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #afafafd2, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Glassmorphism effect */
+.glassmorphism {
+  background: rgba(20, 20, 20, 0.7); /* Semi-transparent dark background */
+  box-shadow: 0 8px 32px 0 rgba(133, 133, 133, 0.37); /* Adds depth */
+  backdrop-filter: blur(4px); /* Blurs the background */
+  -webkit-backdrop-filter: blur(4px); /* Blurs background for WebKit browsers */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+}
+
+/* Card shadow effect for depth */
+.card-shadow {
+  box-shadow: rgba(155, 155, 155, 0.3) 0 2px 6px,
+    rgba(155, 155, 155, 0.22) 0 0 4px;
+  border-radius: 24px; /* Smooth corners */
+}
+
+/* Black-to-dark gradient background */
+.black-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+/* Black-to-white gradient background */
+.bw-gradient {
+  background: rgb(232, 69, 69);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.8) 40%,
+    rgba(153, 153, 161, 0) 70%
+  );
+}
+
+/* Card-specific gradient background */
+.card-gradient {
+  background: rgb(244, 244, 246);
+  background: linear-gradient(
+    158deg,
+    rgba(153, 153, 161, 1) 25%,
+    rgba(153, 153, 161, 1) 100%
+  );
+}
+
+/* Loader styles for a spinning animation */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em; /* Hides text */
+  animation: mulShdSpin 1.1s infinite ease; /* Continuous spin animation */
+  transform: translateZ(0); /* Improves performance */
+}
+
+/* Keyframes for loader animation */
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  /* Intermediate steps for smooth spinning effect */
+}

@@ -181,29 +181,19 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
+    name: 'Znooz',
     description: 'A comic characters list app that displays Marvel characters.',
     tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
+      { name: 'react', color: 'blue-text-gradient' },
+      { name: 'mongodb', color: 'green-text-gradient' },
+      { name: 'tailwind', color: 'pink-text-gradient' },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    caseStudyPath: '/projects/ZnoozCaseStudy', // Path to case study page
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Abile',
     description:
       'A leaderboard list app that displays scores submitted by different players.',
     tags: [
@@ -221,8 +211,7 @@ const projects = [
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   },
   {
     id: 'project-3',
@@ -243,8 +232,6 @@ const projects = [
       },
     ],
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   {
     id: 'project-4',
@@ -265,8 +252,6 @@ const projects = [
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
   },
   {
     id: 'project-5',
@@ -288,8 +273,6 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
   },
 
   
