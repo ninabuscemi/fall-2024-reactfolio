@@ -50,6 +50,9 @@ import movie from './project/movie-metro.png';
 import nyeusi from './project/nyeusi.png';
 import space from './project/space-hub.png';
 
+import znooz from './znooz/znooz-hero.png';
+
+
 export {
   bwmap,
   nairobi,
@@ -96,4 +99,5 @@ export {
   dcc,
   kelhel,
   microverse,
+  znooz,
 };
