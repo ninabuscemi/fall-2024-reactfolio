@@ -1,0 +1,126 @@
+/* Hero Section */ 
+
+@media (max-width: 768px) {
+  .hero-container {
+    margin-top: 80px; /* Adjust top margin for smaller screens */
+  }
+
+  .hero-banner {
+    padding: 20px 15px; /* Reduce padding for mobile */
+  }
+
+  .hero-image-container {
+    flex-direction: column; /* Ensure proper stacking for smaller screens */
+    overflow: hidden;
+  }
+
+  .hero-image {
+    max-width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+  }
+
+  .hero-overlay {
+    top: 50%; /* Adjust position for better visibility */
+    font-size: 1rem; /* Reduce font size for mobile */
+    padding: 15px 10px; /* Adjust padding for the overlay text */
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Adjust font size for the title */
+    padding: 8px; /* Reduce padding for mobile */
+  }
+}
+
+/* Design Spring Process */
+
+@media (max-width: 768px) {
+  .design-sprint-navigation {
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    margin: 0 auto; /* Center the navigation */
+    gap: 10px; /* Space between buttons */
+    padding: 0 10px; /* Optional: add some padding for better alignment */
+    height: 40vh; /* Ensure the container takes up full viewport height */
+  }
+
+  .design-sprint-navigation button {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    box-sizing: border-box; /* Prevents padding from overflowing the width */
+  }
+
+  .line-separator {
+    display: none;
+  }
+}
+
+/* Discovery/Understanding Section */
+@media (max-width: 768px) {
+  .discovery-container, .understanding-container {
+    flex-direction: column; /* Stack content vertically */
+    padding: 10px; /* Reduce padding for mobile */
+    gap: 30px; /* Reduce space between elements */
+  }
+
+  .discovery-container {
+    margin-bottom: 40px; /* Space between containers on mobile */
+}
+
+  .discovery-image, .understanding-image {
+    max-width: 100%; /* Scale image to container width */
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .discovery-text, .understanding-text {
+    font-size: 16px; /* Slightly increase font size for readability */
+    text-align: justify; /* Better alignment for longer text */
+    line-height: 1.6; /* Improve readability on smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .research-section {
+    padding: 1rem 10rem; /* Reduce horizontal padding */
+  }
+
+  .images-container {
+    gap: 4rem; /* Reduce gap between images */
+  }
+
+  .research-section h2 {
+    font-size: 1.6rem; /* Slightly increase font size for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .research-section {
+    padding: 1rem 3rem; /* Further reduce horizontal padding */
+  }
+
+  .images-container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 1.2rem; /* Reduce gap between stacked items */
+  }
+
+  .research-section h2 {
+    font-size: 1.4rem; /* Maintain smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .research-section {
+    padding: 1rem; /* Minimal padding for small screens */
+  }
+
+  .images-container {
+    gap: 1rem; /* Tighten gap for compact screens */
+  }
+
+  .research-section h2 {
+    font-size: 0.9rem; /* Slightly smaller font for compact layout */
+  }
+}

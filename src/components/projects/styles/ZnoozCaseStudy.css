@@ -1,80 +1,542 @@
 /* ZnoozCaseStudy.css */
 
-/* Container for Znooz case study */
-.case-study-container {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 1200px;
-  font-family: 'Poppins', sans-serif; /* Ensuring Poppins is used */
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  color: #000;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Case study title */
-.case-study-title {
-  font-size: 2.5rem;
-  color: #333;
+html {
+  font-size: 16px; /* Base font size for scaling */
+}
+
+/* Section Styling */
+.case-study-section {
+  padding: 30px;
+}
+
+.hero-container {
   text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
+  margin-top: 70px;
 }
 
-/* Case study paragraph */
-.case-study-description {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .case-study-container {
-    padding: 20px;
-  }
-
-  .case-study-title {
-    font-size: 2rem;
-  }
-
-  .case-study-description {
-    font-size: 1rem;
-  }
-}
-
-/* Hero Banner */
 .hero-banner {
   position: relative;
-  width: 100%;
-  height: auto; /* Or a fixed height for a consistent layout */
+  background-color: #fff;
+  padding: 30px 40px;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .hero-image {
   width: 100%;
+  max-width: 70%;
   height: auto;
-  object-fit: cover; /* Ensures the image scales properly */
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-overlay {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
-  text-align: center;
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
+
+
+/* Introduction Section */
+.introduction-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.introduction-section h1, .introduction-section h2 {
+  font-weight: bold;
+}
+
+.live-prototype-button {
+  display: inline-block;
+  margin: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #2170cb;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.live-prototype-button:hover {
+  background-color: #6d8298;
+}
+
+/* Design Sprint Navigation */
+.design-sprint-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.circle-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1b7bf1;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.circle-button:hover {
+  transform: scale(1.1);
+  background-color: #b3dbff;
+}
+
+.line-separator {
+  width: 100px;
+  height: 2px;
+  background-color: #d9eeff;
+}
+
+/* Discovery and Understanding Section */
+.discovery-container, .understanding-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  margin: 10px auto;
+  max-width: 1200px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discovery-image, .understanding-image {
+  flex: 1;
+  max-width: 450px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.discovery-text, .understanding-text {
+  flex: 2;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Persona Section */
+.user-persona-section {
+  margin: 4rem auto;
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between; /* Space between left and middle sections */
+}
+
+.user-persona-section h2 {
+  text-align: center; /* Horizontally center the text */
+  font-size: 2rem; /* Make the title prominent */
+  margin: 0 auto 2rem; /* Center the title and add spacing below */
+  color: #333; /* Adjust the color if needed */
+}
+
+/* Persona Image Styling */
+.persona-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  max-width: 340px;
+}
+
+.persona-photo {
+  width: 100%;
+  border-radius: 10em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.persona-image ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.persona-image li {
+  margin-bottom: 0.8em;
+}
+
+.persona-image li strong {
+  color: #007BFF; /* Accent color */
+}
+
+/* Persona Details Styling */
+.persona-details {
+  flex: 2;
+  text-align: left; /* Left-align text */
+  max-width: 700px; /* Constrain width for better readability */
+}
+
+.persona-details h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.persona-details p {
+  margin-bottom: 1rem;
+}
+
+.persona-details ul {
+  list-style: none;
+  padding: 0;
+  color: #007BFF;
+}
+
+.persona-details ul li {
+  margin: 0.5rem 0;
+}
+
+.persona-details ul li .bullet-point {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.bullet-point {
+    list-style-type: disc;
+    color: rgb(0, 0, 0);
+  }
+
+/* User Persona Section */
+.case-study-section.user-persona-section .persona-image {
+  display: flex;
+  justify-content: left; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically if needed */
+  margin-top: 20px;
+}
+
+.case-study-section.user-persona-section .persona-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Make height equal to width for a perfect circle */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image scales and crops nicely */
+  border: 2px solid #ccc; /* Optional: Add a border for styling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Research Section */
+.research-section {
+  padding: 0rem 10rem;
+  text-align: center;
+  background-color: white;
+}
+
+.research-section h2 {
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+
+.research-section h3 {
+  font-size: 1.7rem !important;
+  margin-bottom: 0rem;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.image-item {
+  flex: 1;
+  text-align: center;
+}
+
+.case-study-image-1 {
+  width: 110px; /* Adjust size as needed */
+  height: auto;
+  transform: translateX(110px); /* Example of moving */
+}
+
+.case-study-image-2 {
+  width: 140px;
+  height: auto;
+  transform: translateX(90px); /* Example of moving */
+}
+
+.case-study-image-3 {
+  width: 130px;
+  height: auto;
+  transform: translate(80px, -10px); /* Example of moving diagonally */
+}
+
+.image-item p {  
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Wireframe Section */
+.wireframing-section{
+  display: flex;
+  margin: 20px auto;
+  max-width: 900px;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.wireframe-image-1 {
+  max-width: 100%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.wireframe-caption {
+  font-size: 1.6em; /* Adjust font size for the caption */
+  color: #3b5178; /* Optional: Set a lighter color for the caption text */
+  text-align: center; /* Center-align the caption text */
+  margin-top: 2em; /* Add spacing above the caption */
+}
+
+/* Visual Design Section */
+
+.visual-design-section{
+  display: flex;
+  margin: 20px auto;
+  max-width: 900px;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: left; /* Center items vertically if needed */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.visual-design-title {
+  text-align: left; /* Left-justify the title */
+  margin-bottom: 10px; /* Optional spacing */
+}
+
+section.visual-design-section .visual-design-paragraph {
+  text-align: left; /* Left-justify the paragraph */
+  margin-bottom: 20px; /* Optional spacing */
+  line-height: 1.6; /* Improve readability */
+  font-size: 1em; /* Adjust font size for readability */
+  color: #333; /* Optional text color */
+}
+
+
+.visual-design-image {
+  max-width: 80%; /* Make the image smaller (adjust as needed) */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  margin: 20px auto; /* Center with vertical spacing */
+}
+
+/* High-Fidleity Wireframe Section */
+.high-fi-section{
+  display: flex;
+  margin: 20px auto;
+  max-width: 900px;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.high-fi-figure {
+  display: flex;
+  justify-content: center;  /* Centers the image horizontally */
+  align-items: center;      /* Centers the image vertically */
+}
+
+.high-fi-section h2{
+  padding: 10px; /* Optional: Add padding for spacing */
+  font-weight: bold;
+}
+
+.high-fi-caption {
+  font-size: 1.6em; /* Adjust font size for the caption */
+  color: #3b5178; /* Optional: Set a lighter color for the caption text */
+  text-align: center; /* Center-align the caption text */
+  margin-top: 2em; /* Add spacing above the caption */
+}
+
+.high-fi-image-1 {
+  max-width: 100%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.high-fi-image-2 {
+  max-width: 60%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.high-fi-image-3 {
+  max-width: 100%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+
+/* Section Backgrounds */
+.user-testing-section { background-color: #f0f0f0; }
+.conclusion-section { background-color: #fff; }
+
+/* Case Study Navigation */
+.case-study-container {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.case-study-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.case-study-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.case-study-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .case-study-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .case-study-section p {
+    font-size: 1rem;
+  }
+
+  .case-study-image {
+    max-width: 100%;
+  }
+
+  .columns-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .circle-button {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    margin: 0 20px;
+  }
+}
+
+
