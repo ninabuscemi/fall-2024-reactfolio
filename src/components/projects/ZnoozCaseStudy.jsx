@@ -17,6 +17,7 @@ import PersonaPic from '../../assets/znooz/profile_picture_persona.png';
 import HighFi1 from '../../assets/znooz/high-fi-1.png';
 import HighFi2 from '../../assets/znooz/high-fi-2.png';
 import HighFi3 from '../../assets/znooz/high-fi-3.png';
+import Prototype from '../../assets/znooz/Znooz.mp4';
 
 
 
@@ -69,7 +70,7 @@ const ZnoozCaseStudy = () => {
   </a>
 
 
-  {/* Two Columns for Key Features and Design Goals */}
+{/* Two Columns for Key Features and Design Goals */}
   <div className="columns-container">
     {/* Key Features Column */}
     <div className="column">
@@ -82,7 +83,7 @@ const ZnoozCaseStudy = () => {
       </ul>
     </div>
 
-    {/* Design Goals Column */}
+{/* Design Goals Column */}
     <div className="column">
       <h3>Design Goals</h3>
       <ul>
@@ -135,7 +136,6 @@ const ZnoozCaseStudy = () => {
         >
           Testing
         </button>
-        
       </div>
 
 {/* Problem Statement Section */}
@@ -164,7 +164,7 @@ const ZnoozCaseStudy = () => {
     </div>
   </div>
 
-  {/* Understanding Loneliness Section */}
+{/* Understanding Loneliness Section */}
   <div className="understanding-container">
     <div className="understanding-text">
       <h2>Understanding Loneliness</h2>
@@ -182,7 +182,7 @@ const ZnoozCaseStudy = () => {
   </div>
 </section>
 
-      {/* Research Section */}
+    {/* Research Section */}
       <section className="case-study-section research-section" ref={researchRef}>
         <h2>User Research</h2>
         <p>
@@ -192,23 +192,22 @@ const ZnoozCaseStudy = () => {
         </p>
 
         <h3>User Persona</h3>
-
-
-{/* User Persona Section */}
-<section className="user-persona-section">
-  <div className="persona-image">
-    <img
-      src={PersonaPic}
-      alt="User Persona - Alex"
-      className="persona-photo"
-    />
-    <ul>
-      <li><strong>Age:</strong> 28</li>
-      <li><strong>Occupation:</strong> Marketing Specialist</li>
-      <li><strong>Location:</strong> Downtown, bustling metropolitan city</li>
-      <li><strong>Interests:</strong> Meditation, journaling, and self-improvement</li>
-    </ul>
-  </div>
+        
+        {/* User Persona Section */}
+        <section className="user-persona-section">
+          <div className="persona-image">
+            <img
+              src={PersonaPic}
+              alt="User Persona - Alex"
+              className="persona-photo"
+            />
+            <ul>
+              <li><strong>Age:</strong> 28</li>
+              <li><strong>Occupation:</strong> Marketing Specialist</li>
+              <li><strong>Location:</strong> Downtown, bustling metropolitan city</li>
+              <li><strong>Interests:</strong> Meditation, journaling, and self-improvement</li>
+            </ul>
+          </div>
 
   <div className="persona-details">
     <h3>Meet Alex</h3>
@@ -238,13 +237,14 @@ const ZnoozCaseStudy = () => {
           <li class="bullet-point">Improve sleep quality</li>
           <li class="bullet-point">Maintain a healthy work-life balance</li>
         </ul>
+        
       </li>
     </ul>
   </div>
 </section>
 
-          {/* Trends Matrix Section */}
-        <section className="case-study-section user-research">
+{/* User Research Section */}
+  <section className="case-study-section user-research">
         <h2>User Research</h2> 
         </section>
     <div className="images-container">
@@ -264,9 +264,9 @@ const ZnoozCaseStudy = () => {
             <p>Loneliness often disrupts sleep, as overthinking and mental overwhelm make it difficult to unwind at night.</p>
           </div>
           </div>
-      </section>
+  </section>
 
-   {/* Wireframes Section */}
+{/* Wireframes Section */}
       <section className="case-study-section wireframing-section" ref={wireframesRef}>
       <h2>Wireframes</h2>
     <p>
@@ -285,14 +285,14 @@ const ZnoozCaseStudy = () => {
       Task #2: Learning Information
   </figcaption>
   <figure className="wireframe-figure">
-    <img src={WireframeImage2} alt="Znooz Wireframe" className="wireframe-image-1"/>
+    <img src={WireframeImage2} alt="Znooz Wireframe" className="wireframe-image-2"/>
   </figure>
 
   <figcaption className="wireframe-caption">
       Task #3: Play sounds & music
   </figcaption>
   <figure className="wireframe-figure">
-    <img src={WireframeImage3} alt="Znooz Wireframe" className="wireframe-image-1"/>
+    <img src={WireframeImage3} alt="Znooz Wireframe" className="wireframe-image-3"/>
   </figure>
 </section>
 
@@ -314,7 +314,7 @@ const ZnoozCaseStudy = () => {
 </section>
 
  {/* High-fi Wireframe Section */}
-      <section className="case-study-section high-fi-section" ref={wireframesRef}>
+ <section className="case-study-section high-fi-section" ref={wireframesRef}>
       <h2>High-Fidelity Wireframes</h2>
     <p>
     During the wireframing process, I used the insights I gathered from my initial 
@@ -343,35 +343,44 @@ const ZnoozCaseStudy = () => {
   </figure>
 </section>
 
-  {/* User Testing Section */}
-  <section className="case-study-section user-testing-section" ref={testingRef}>
+{/* User Testing Section */}
+{false && (
+<section className="case-study-section user-testing-section" ref={testingRef}>
     <h2>User Testing</h2>
     <p>
       User testing was conducted with a group of participants. Feedback was gathered to refine the app’s usability and ensure the design effectively addressed the initial problem.
     </p>
-  </section>
+  </section> )}
 
-  {/* Conclusion Section */}
-  <section className="case-study-section conclusion-section">
-    <h2>Final Prototype</h2>
-    <p>
-Problem: 
-How can I help reduce the problems with loneliness to allow users to feel calm and relaxed throughout their day or at night?
+{/* Final Prototype */}
+  <section className="case-study-section prototype-section">
+  <h2>Final Prototype</h2>
+  <p>Problem: How can I help reduce the problems with loneliness to allow users to feel calm and relaxed throughout their day or at night?</p>
+  
+  <p>Product Solutions:</p>
+  <ul className="product-solutions-list">
+    <li class="bullet-point">Write journal prompts to process their thoughts and feelings</li>
+    <li class="bullet-point">Play meditation exercises to ground themselves</li>
+    <li class="bullet-point">Play relaxation exercises to fall back asleep</li>
+    <li class="bullet-point">Listen to music or sounds for calm and relaxation</li>
+    <li class="bullet-point">Level up and unlock rewards by earning points through journal prompts, meditations, exercises, or listening to soundtracks</li>
+  </ul>
+  <p>
+    The final prototype represents the culmination of research, user insights, and design iterations. This product is a thoughtfully designed tool aimed at reducing loneliness and promoting relaxation. By incorporating interactive and user-focused solutions, it provides a seamless and engaging experience. Each feature was crafted to empower users to prioritize their well-being while making the journey enjoyable and rewarding.  
+  </p>
+  <div className="video-container">
+    <video controls width="100%" poster="thumbnail.jpg">
+      <source src={Prototype} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p className="video-summary">
+      This video showcases the final prototype, illustrating how features like journaling, meditation, relaxation exercises, and the reward system work together to enhance user well-being. 
+    </p>
+  </div>
+</section>
 
-Product Solutions:
-Users can…
-
-  • Write journal prompts to process their thoughts and feelings
-
-  • Play meditation exercises to ground themselves
-
-  • Play relaxation exercises to fall back asleep
-
-  • Listen to music or sounds for calm and relaxation
-
-  • Level up and unlock rewards by earning points through journal prompts, meditations, exercises, or listening to soundtracks    </p>
-  </section>
 </div>
+
   );
 };
 

@@ -1,0 +1,397 @@
+/* ZnoozCaseStudy.css */
+
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  color: #000;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px; /* Base font size for scaling */
+}
+
+/* Section Styling */
+.case-study-section {
+  padding: 30px;
+}
+
+.abile-hero-container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.abile-hero-banner {
+  position: relative;
+  background-color: #fff;
+  padding: 30px 40px;
+}
+
+.abile-hero-image {
+  width: 100%;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.aible-hero-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.abile-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Introduction Section */
+.introduction-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.introduction-section h1, .introduction-section h2 {
+  font-weight: bold;
+}
+
+.abile-prototype-button {
+  display: inline-block;
+  margin: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #44a9e3;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.abile-prototype-button:hover {
+  background-color: #1e65b8;
+}
+
+.abile-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.abile {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abile h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.abile ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.abile ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Design Sprint Navigation */
+.abile-design-sprint-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.abile-circle-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1b7bf1;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.abile-circle-button:hover {
+  transform: scale(1.1);
+  background-color: #b3dbff;
+}
+
+.abile-line-separator {
+  width: 100px;
+  height: 2px;
+  background-color: #d9eeff;
+}
+
+/* What's the problem? Section */
+.abile-problem-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  margin: 10px auto;
+  max-width: 1200px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abile-problem-image {
+  flex: 1;
+  max-width: 450px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.abile-problem-text {
+  flex: 2;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.abile-problem-text ul {
+  list-style:none;
+  padding: 0;
+}
+
+.abile-problem-text li {
+    margin-bottom: 1rem;
+}
+
+.abile-problem-text h2 {
+    font-weight: bold;
+}
+
+/* Competitive Analysis Section */
+.competitive-analysis-section {
+  margin: 3rem auto;
+  padding: 1rem;
+  max-width: 1100px; /* Restrict the section's maximum width */
+}
+
+
+.section-title {
+  max-width: 1200px; /* Restrict content width for readability */
+  margin: 0 auto 2rem auto; /* Center align the block */
+  text-align: left;
+}
+
+.section-title h2 {
+  font-size: 2rem; /* Slightly larger font size for emphasis */
+  color: #333;
+  margin-bottom: 1rem; /* More spacing between title and paragraph */
+  text-align: left; /* Center title alignment */
+  font-weight: bold;
+}
+
+.section-title p {
+  line-height: 1.6; /* Add line height for better readability */
+  margin: 0 auto;
+  text-align: justify; /* Justify text for even spacing */
+}
+
+.competitor-columns {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap for smaller screens */
+  gap: 1.4rem; /* Space between columns */
+  justify-content: space-between; /* Space out the columns */
+  margin-top: 3em;
+}
+
+.competitor-column {
+  flex: 1 1 calc(50% - 2rem); /* Take up half the row minus gap space */
+  max-width: calc(50% - 2rem);
+  background-color: #f9f9f9;
+  padding: 2rem; /* Reduce padding slightly */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.competitor-logo {
+  float: right; /* Make the logo float to the right */
+  width: 80px; /* Fixed width for consistency */
+  height: auto;
+  margin: 0 0 1rem 1rem; /* Add spacing around the logo */
+}
+
+.competitor-column h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 0; /* Align with the logo */
+  font-weight: bold;
+}
+
+.competitor-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.competitor-column li {
+  margin-bottom: 0.75rem; /* Tighten spacing between list items */
+}
+
+.bullet-point {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem; /* Slightly smaller font size */
+}
+
+.bullet-point:last-child {
+  margin-bottom: 0;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: #ffcc00; /* Gold for stars */
+  margin-bottom: 1rem; /* Spacing between the rating and the list */
+}
+
+.rating span {
+  font-size: 1rem;
+  color: #333; /* Text color for numerical rating */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .competitor-column {
+    flex: 1 1 100%; /* Full width for each column */
+    max-width: 100%;
+  }
+}
+
+/* Wireframe Section */
+.abile-wireframing-section{
+  display: flex;
+  margin: 20px auto;
+  max-width: 1100px;
+  flex-direction: column; /* Stack items vertically */
+  align-items: left; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+  text-align: left; /* Center-align text */
+  padding: 10px; /* Optional: Add padding for spacing */
+}
+
+.abile-wireframing-section h2{
+  font-weight: bold;
+}
+
+.abile-wireframe-image-1 {
+  max-width: 100%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.abile-wireframe-image-2 {
+  max-width: 80%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  margin: 0 auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.abile-wireframe-image-3 {
+  max-width: 90%; /* Responsive image size */
+  width: 1200px; /* Set a fixed width if needed */
+  margin: 0 auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add spacing around the image */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.abile-wireframe-caption {
+  font-size: 1.6em; /* Adjust font size for the caption */
+  color: #000000; /* Optional: Set a lighter color for the caption text */
+  text-align: center; /* Center-align the caption text */
+  margin-top: 2em; /* Add spacing above the caption */
+}
+
+/* Persona Section */
+.user-persona-section {
+  margin: 4rem auto;
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between; /* Space between left and middle sections */
+}
+
+.user-persona-section h2 {
+  text-align: center; /* Horizontally center the text */
+  font-size: 2rem; /* Make the title prominent */
+  margin: 0 auto 2rem; /* Center the title and add spacing below */
+  color: #333; /* Adjust the color if needed */
+}
+
+/* Persona Image Styling */
+.persona-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  max-width: 340px;
+}
+
+.persona-photo {
+  width: 100%;
+  border-radius: 10em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.persona-image ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.persona-image li {
+  margin-bottom: 0.8em;
+}
+
+.persona-image li strong {
+  color: #007BFF; /* Accent color */
+}
