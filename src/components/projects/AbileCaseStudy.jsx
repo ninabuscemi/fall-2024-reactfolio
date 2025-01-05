@@ -5,6 +5,15 @@ import AbileCover from '../../assets/abile/abile_cover.png';
 import AbileProblemImage from '../../assets/abile/abile-problem-image.png';
 import LinkedIn from '../../assets/abile/linkedin.png';
 import HandShake from '../../assets/abile/handshake.png';
+import Persona from '../../assets/abile/sarah_persona.png';
+import Task1 from '../../assets/abile/task_1_1.jpg';
+import Task2 from '../../assets/abile/task_1_2.jpg';
+import Task3 from '../../assets/abile/task_1_3.jpg';
+import Task2_1 from '../../assets/abile/task_2_1.jpg';
+import Task2_2 from '../../assets/abile/task_2_2.jpg';
+import Task2_3 from '../../assets/abile/task_2_3.jpg';
+
+
 
 
 const AbileCaseStudy = () => {
@@ -126,8 +135,8 @@ const AbileCaseStudy = () => {
         <h2>What is the problem?</h2>
         <p>
         Navigating a new career path can be daunting for students and professionals alike. Many feel uncertain about their fit for the role or industry, often needing expert guidance to gain clarity and make confident, informed decisions.
-
-        Key Question:
+    </p>
+    <p><strong> Key Question: </strong>
         How can we provide virtual support to help users successfully prepare for their career journey?
         </p>
         <p>
@@ -248,33 +257,9 @@ const AbileCaseStudy = () => {
       </div>
     </section>
 
-  {/* Wireframes Section */}
-      <section className="case-study-section abile-wireframing-section">
-        <h2>Wireframing & Prototyping</h2>
-        <p>
-        To lay the foundation for Abile's user experience, I started with low-fidelity paper wireframes. 
-        These sketches mapped essential user tasks and flows, ensuring a logical and intuitive information architecture. 
-        By keeping the designs simple at this stage, I was able to focus on addressing user needs and integrating 
-        insights from research and competitive analysis.
-      </p>
-      <figcaption className="abile-wireframe-caption">
-          Task #1: Post a discussion forum
-      </figcaption>
-      <figure className="abile-wireframe-figure">
-        <img src="" alt="" className="wireframe-image-1"/>
-      </figure>
-    
-      <figcaption className="abile-wireframe-caption">
-          Task #2: Search for jobs & apply
-      </figcaption>
-      <figure className="abile-wireframe-figure">
-        <img src="{WireframeImage2}" alt="Abile Wireframe" className="wireframe-image-2"/>
-      </figure>
-    </section>
-
-  {/* User Persona Section*/}
+     {/* User Persona Section*/}
     <section className="case-study-section user-persona">
-            <h2>User Persona</h2>
+            <h2><strong>User Persona</strong></h2>
             <p>
               To ensure Abile meets the needs of its target audience, a detailed user persona was created based on research and user feedback.
             </p>
@@ -283,7 +268,7 @@ const AbileCaseStudy = () => {
             <section className="user-persona-section">
               <div className="persona-image">
                 <img
-                  src=""
+                  src={Persona}
                   alt="User Persona - Sarah Thompson"
                   className="persona-photo"
                 />
@@ -330,9 +315,63 @@ const AbileCaseStudy = () => {
       </section>
     </section>
 
-    
-</div>
+  {/* Wireframes Section */}
+<section className="case-study-section abile-wireframing-section">
+  <h2>Wireframing & Prototyping</h2>
+  <p>
+    To lay the foundation for Abile's user experience, I started with low-fidelity paper wireframes. 
+    These sketches mapped essential user tasks and flows, ensuring a logical and intuitive information architecture. 
+    By keeping the designs simple at this stage, I was able to focus on addressing user needs and integrating 
+    insights from research and competitive analysis.
+  </p>
 
+  {/* Low-Fidelity Wireframes */}
+  <h3>Low-Fidelity Wireframes</h3>
+  <div className="abile-wireframe-container">
+    <figure className="abile-wireframe-figure">
+      <img src={Task1} alt="Post a discussion forum task" className="wireframe-task-1" />
+      <figcaption className="abile-wireframe-caption">Click the highlighted button to start a discussion forum.</figcaption>
+    </figure>
+
+    <figure className="abile-wireframe-figure">
+      <img src={Task2} alt="Search & apply for jobs task" className="wireframe-task-2" />
+      <figcaption className="abile-wireframe-caption">Type a title and description for your post. Click on the highlighted button.
+        <p><strong>Optional: upload an image, document, etc.</strong></p>
+      </figcaption>
+    </figure>
+
+    <figure className="abile-wireframe-figure">
+      <img src={Task3} alt="Third wireframe task" className="wireframe-task-3" />
+      <figcaption className="abile-wireframe-caption">Dialogue box pop-up confirms your post has been published. 
+        <strong>Options: view or edit your post.</strong>
+      </figcaption>
+    </figure>
+  </div>
+
+  {/* Mid-Fidelity Wireframes */}
+  <h3>Mid-Fidelity Wireframes</h3>
+      <div className="abile-wireframe-container">
+        <figure className="abile-wireframe-figure">
+          <img src={Task2_1} alt="Post a discussion forum task" className="wireframe-task-2-1" />
+          <figcaption className="abile-wireframe-caption">Click the highlighted button to start a discussion forum.</figcaption>
+        </figure>
+
+        <figure className="abile-wireframe-figure">
+          <img src={Task2_2} alt="Search & apply for jobs task" className="wireframe-task-2" />
+          <figcaption className="abile-wireframe-caption">Type a title and description for your post. Click on the highlighted button.
+            <p><strong>Optional: upload an image, document, etc.</strong></p>
+          </figcaption>
+        </figure>
+
+        <figure className="abile-wireframe-figure">
+          <img src={Task2_3} alt="Third wireframe task" className="wireframe-task-3" />
+          <figcaption className="abile-wireframe-caption">Dialogue box pop-up confirms your post has been published. 
+            <strong>Options: view or edit your post.</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    </div>
   );
 };
 

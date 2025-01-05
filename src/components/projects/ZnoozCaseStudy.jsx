@@ -191,7 +191,7 @@ const ZnoozCaseStudy = () => {
           I gained critical insights into how loneliness affects well-being and how technology can address it.
         </p>
 
-        <h3>User Persona</h3>
+        <h3><strong>User Persona</strong></h3>
         
         {/* User Persona Section */}
         <section className="user-persona-section">

@@ -1,5 +1,4 @@
 /* ZnoozCaseStudy.css */
-
 /* Global Styling */
 body {
   margin: 0;
@@ -203,7 +202,6 @@ html {
   max-width: 1100px; /* Restrict the section's maximum width */
 }
 
-
 .section-title {
   max-width: 1200px; /* Restrict content width for readability */
   margin: 0 auto 2rem auto; /* Center align the block */
@@ -350,8 +348,10 @@ html {
 
 /* Persona Section */
 .user-persona-section {
-  margin: 4rem auto;
-  padding: 2em;
+  position: static; /* Ensure the section stays in its flow */
+  width: 1200px; /* Set a fixed width */
+  margin: 3rem auto; /* Center the section horizontally */
+  padding: 3em;
   background-color: #f9f9f9;
   border-radius: 4px;
   display: flex;
@@ -364,6 +364,8 @@ html {
   font-size: 2rem; /* Make the title prominent */
   margin: 0 auto 2rem; /* Center the title and add spacing below */
   color: #333; /* Adjust the color if needed */
+  font-weight: bold;
+  width: 300px;
 }
 
 /* Persona Image Styling */
@@ -372,7 +374,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align content to the left */
-  max-width: 340px;
+  max-width: 300px;
 }
 
 .persona-photo {
@@ -394,4 +396,68 @@ html {
 
 .persona-image li strong {
   color: #007BFF; /* Accent color */
+}
+
+/* Wireframe Section */
+.abile-wireframing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+  padding: 10px;
+}
+
+.abile-wireframe-container {
+  display: flex; /* Place items in a row */
+  justify-content: center; /* Center-align items */
+  gap: 20px; /* Add space between wireframes */
+}
+
+.abile-wireframe-figure {
+  text-align: center; /* Center-align the caption */
+}
+
+/* Individual Image Sizes */
+.wireframe-task-1 {
+  width: 245px; /* Fixed size for Task 1 */
+  max-width: unset; /* Ensure width is not overridden */
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.wireframe-task-2 {
+  width: 193px; /* Fixed size for Task 2 */
+  max-width: unset;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.wireframe-task-3 {
+  width: 190px; /* Fixed size for Task 3 */
+  max-width: unset;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.wireframe-task-2-1 {
+  width: 198px; /* Fixed size for Task 2 */
+  max-width: unset;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.abile-wireframe-caption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
 }
