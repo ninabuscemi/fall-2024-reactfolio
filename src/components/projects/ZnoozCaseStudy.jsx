@@ -193,7 +193,7 @@ const ZnoozCaseStudy = () => {
 
         <h3><strong>User Persona</strong></h3>
         
-        {/* User Persona Section */}
+  {/* User Persona Section */}
         <section className="user-persona-section">
           <div className="persona-image">
             <img

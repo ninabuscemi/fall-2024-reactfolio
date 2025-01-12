@@ -346,26 +346,45 @@ html {
   margin-top: 2em; /* Add spacing above the caption */
 }
 
-/* Persona Section */
+
+/* User Persona Section */
 .user-persona-section {
-  position: static; /* Ensure the section stays in its flow */
-  width: 1200px; /* Set a fixed width */
-  margin: 3rem auto; /* Center the section horizontally */
+  position: static;
+  width: 100%; /* Responsive full width */
+  max-width: 1200px; /* Restrict max width for better layout */
+  margin: 2rem auto;
   padding: 3em;
   background-color: #f9f9f9;
   border-radius: 4px;
   display: flex;
+  flex-wrap: wrap; /* Ensures layout adapts on smaller screens */
   gap: 2rem;
-  justify-content: space-between; /* Space between left and middle sections */
+  justify-content: space-between;
 }
 
-.user-persona-section h2 {
-  text-align: center; /* Horizontally center the text */
-  font-size: 2rem; /* Make the title prominent */
-  margin: 0 auto 2rem; /* Center the title and add spacing below */
-  color: #333; /* Adjust the color if needed */
-  font-weight: bold;
-  width: 300px;
+.case-study-section.user-persona h2 {
+  text-align: center; /* Center aligns the heading */
+  margin-bottom: 2rem; /* Adds space below the heading */
+}
+
+.case-study-section.user-persona p {
+  width: 100%; /* Makes paragraph span the full section width */
+  max-width: 800px; /* Restricts paragraph width for readability */
+  margin: 0 auto 2rem; /* Centers paragraph and adds spacing */
+  text-align:left; /* Justifies text for neat alignment */
+}
+
+.case-study-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the container's content horizontally */
+  width: 100%; /* Ensures the section spans the full width of the page */
+}
+
+.user-persona-container {
+  width: 1095px; /* Adjust the width as needed */
+  margin: 0 auto; /* Centers the container horizontally */
+  text-align: left; /* Ensures all text inside is left-aligned */
 }
 
 /* Persona Image Styling */
@@ -460,4 +479,216 @@ html {
   margin-top: 10px;
   font-style: italic;
   font-size: 15px;
+}
+
+/* Usability & Testing Iterations Section */
+.abile-usability-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Limit the width of the section */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+h3.usability {
+  text-align: left; /* Left align the title */
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+p {
+  text-align: left; /* Left justify the description */
+  margin: 0 auto;
+  max-width: 1000px; /* Limit the width of the description */
+  line-height: 1.6; /* Improve line spacing for readability */
+}
+
+.abile-usability-container {
+  display: flex;
+  flex-direction: column; /* Stacked layout */
+  gap: 20px;
+}
+
+.abile-usability-figure {
+  display: flex;
+  flex-direction: column; /* Initially stack image and caption vertically */
+  align-items: center;
+  text-align: left;
+  flex: 1;
+}
+
+.abile-usability-figure img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Specific sizes for each image */
+.abile-usability-figure .sign-in {
+  max-width: 500px; /* Adjust this value as needed */
+}
+
+.abile-usability-figure .home-screen {
+  max-width: 490px; /* Adjust this value as needed */
+}
+
+.abile-usability-figure .messaging-center {
+  max-width: 500px; /* Adjust this value as needed */
+}
+
+/* Optional styling for the figures' captions */
+.abile-usability-caption {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bullet-point {
+  margin-bottom: 5px;
+}
+
+/* For responsive layout (when screen width is large enough) */
+@media (min-width: 768px) {
+  .abile-usability-container {
+    flex-direction: column; /* Keep images stacked even on larger screens */
+  }
+
+  .abile-usability-figure {
+    flex-direction: row; /* Change to row layout for larger screens */
+    align-items: center; /* Align image and caption horizontally */
+    text-align: left;
+  }
+
+  .abile-usability-figure img {
+    margin-right: 20px; /* Add space between the image and the caption */
+    max-width: 50%; /* Adjust image size */
+  }
+
+  .mentor-screen,
+.abile-video,
+.abile-discussion {
+  width: 100%; /* Adjust to your needs, e.g., 50%, 300px, etc. */
+  max-width: 300px; /* Ensure it doesn't exceed a specific size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0; /* Add spacing around the images */
+}
+
+
+  @media screen and (max-width: 768px) {
+  .mentor-screen,
+  .abile-video,
+  .abile-discussion {
+    max-width: 100%; /* Adapt for smaller screens */
+  }
+}
+}
+
+/* Prototype Section Layout */
+.abile-prototype-section {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+h3.prototype {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.abile-solution {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.abile-solution-text {
+  flex: 1;
+  font-size: 18px;
+}
+
+.abile-solution img {
+  width: 500px; /* Set image width */
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Highlighted Text */
+.highlight {
+  font-size: 18px; /* Adjusts font size for readability */
+  font-weight: 300; /* Adds slight emphasis without being too bold */
+  line-height: 2; /* Improves line spacing for better readability */
+  background-color: #f9f9f9; /* Adds a subtle background for emphasis */
+  border-left: 4px solid #bdcbdb; /* Adds a blue border for visual appeal */
+  padding: 16px; /* Adds padding inside the block for spacing */
+  margin-top: 20px; /* Separates it from surrounding elements */
+  margin-bottom: 20px; /* Adds space below the paragraph */
+  border-radius: 8px; /* Optional: Rounds the corners */
+  color: #333; /* Ensures text is readable against the background */
+  padding-left: 20px;
+}
+
+.highlight ul {
+  margin-top: 12px; /* Adds spacing between text and list */
+  margin-left: 30px; /* Indents list items */
+}
+
+.highlight .bullet-point {
+  font-weight: 400; /* Keeps the list items visually distinct but not too heavy */
+}
+
+.abile-prototype-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds spacing below the title */
+}
+
+.abile-prototype-section p {
+  font-size: 18px;
+  margin-bottom: 16px; /* Adds spacing below paragraphs */
+  
+}
+
+.abile-product-solutions-list {
+  list-style-type: none; /* Removes default bullets */
+  padding: 0; /* Removes padding */
+  margin: 30px auto; /* Centers the list */
+  display: inline-block; /* Keeps the list centered */
+  text-align: left; /* Aligns list items to the left for readability */
+}
+
+.abile-product-solutions-list li {
+  margin-bottom: 8px; /* Adds space between list items */
+}
+
+.abile-video-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  width: 40%; /* Ensures the video scales responsively */
+  height: 200px; /* Adjust this to the desired cropped height */
+  object-fit: cover; /* Crops the video while maintaining the aspect ratio */
+  overflow: hidden; /* Ensures only the cropped area is visible */
+  border-radius: 3px; /* Optional: Adds rounded corners to the video */
+}
+
+.abile-video-summary {
+  margin-top: 12px;
+  font-size: 16px;
+  text-align: center; /* Centers the summary text */
+}
+
+@media screen and (max-width: 768px) {
+  .abile-solution {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .abile-solution img {
+    margin-top: 10px; /* Add spacing above/below image */
+  }
 }

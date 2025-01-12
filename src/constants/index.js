@@ -27,6 +27,8 @@ import {
   dcc,
   kelhel,
   microverse,
+  znooz,
+  abile,
 } from '../assets';
 
 export const navLinks = [
@@ -188,7 +190,7 @@ const projects = [
       { name: 'mongodb', color: 'green-text-gradient' },
       { name: 'tailwind', color: 'pink-text-gradient' },
     ],
-    image: komikult,
+    image: znooz,
     caseStudyPath: '/projects/ZnoozCaseStudy', // Path to case study page
   },
   {
@@ -210,7 +212,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
+    image: abile,
 caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   },
   {

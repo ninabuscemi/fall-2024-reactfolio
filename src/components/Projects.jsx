@@ -34,7 +34,11 @@ const ProjectCard = ({
       h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
       
-      {/* ... existing image and overlay code ... */}
+      <img
+        src={image}
+        alt={name}
+        className="absolute w-full h-full object-cover rounded-[24px]"
+      />
 
       {active === id && (
         <div

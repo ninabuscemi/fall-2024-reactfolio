@@ -50,7 +50,8 @@ import movie from './project/movie-metro.png';
 import nyeusi from './project/nyeusi.png';
 import space from './project/space-hub.png';
 
-import znooz from './znooz/znooz-hero.png';
+import znooz from './project/znooz_case_cover.png';
+import abile from './project/abile_case_cover.png';
 
 
 export {
@@ -100,4 +101,5 @@ export {
   kelhel,
   microverse,
   znooz,
+  abile,
 };

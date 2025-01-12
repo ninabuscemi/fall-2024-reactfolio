@@ -12,9 +12,12 @@ import Task3 from '../../assets/abile/task_1_3.jpg';
 import Task2_1 from '../../assets/abile/task_2_1.jpg';
 import Task2_2 from '../../assets/abile/task_2_2.jpg';
 import Task2_3 from '../../assets/abile/task_2_3.jpg';
-
-
-
+import sign_in from '../../assets/abile/sign_in_1.png';
+import home_screen from '../../assets/abile/home_screen_nav.png';
+import messaging_center from '../../assets/abile/messaging_center.png';
+import discussion from '../../assets/abile/discussion_1_2.png';
+import video from '../../assets/abile/video_call.png';
+import mentor from '../../assets/abile/mentor_match.png';
 
 const AbileCaseStudy = () => {
   // References for sections
@@ -44,6 +47,16 @@ const AbileCaseStudy = () => {
     empowering users to navigate new career paths with confidence. Whether it’s posing quick questions, 
     seeking portfolio feedback, or scheduling video sessions, Abile makes expert guidance accessible and intuitive.
   </p>
+
+ <li class="bullet-point">Type: Mobile App</li>
+
+ <li class="bullet-point">Role: UX/UI Designer & Researcher</li>
+
+ <li class="bullet-point">Tools Used: Figma, Adobe Illustrator, Miro</li>
+
+ <li class="bullet-point">Duration: 3 months</li>
+
+<li class="bullet-point">Deliverables: Low- and high-fidelity wireframes, clickable prototype, usability test findings, final design solutions</li>
   {/* Live Prototype Button */}
   <a
     href="https://your-prototype-link.com" // Replace with your actual prototype link
@@ -134,18 +147,21 @@ const AbileCaseStudy = () => {
       <div className="abile-problem-text">
         <h2>What is the problem?</h2>
         <p>
-        Navigating a new career path can be daunting for students and professionals alike. Many feel uncertain about their fit for the role or industry, often needing expert guidance to gain clarity and make confident, informed decisions.
-    </p>
-    <p><strong> Key Question: </strong>
+        Navigating a new career path can be daunting for students and professionals alike. 
+        Many feel uncertain about their fit for the role or industry, often needing expert guidance 
+        to gain clarity and make confident, informed decisions. So, I wanted to understand the challenges individuals face when
+        transitioning careers and how they seek support.</p> 
+        
+        <p>Through research and interviews, I posed the key question:
         How can we provide virtual support to help users successfully prepare for their career journey?
         </p>
         <p>
           User Needs/Goals:
         </p>
         <ul style={{ paddingLeft: '2rem', listStylePosition: 'outside' }}>
-          <li class="bullet-point">Need: A mentor in their field</li>
-          <li class="bullet-point">Need: Help preparing for interviews</li>
-          <li class="bullet-point">Need: Feedback on resumes, portfolios, or cover letters</li>
+          <li class="bullet-point">Users need access to experienced mentors in their chosen field</li>
+          <li class="bullet-point">Easy-to-use tools for interview preparation and feedback on resumes or portfolios</li>
+          <li class="bullet-point">Real-time responses for pressing career questions</li>
         </ul>
       </div>
     </div>
@@ -156,7 +172,7 @@ const AbileCaseStudy = () => {
       <div className="section-title">
         <h2>Competitive Analysis</h2>
         <p>
-          A detailed look at existing platforms, LinkedIn and Handshake, highlights their strengths, weaknesses, opportunities, and threats. 
+          A detailed look at existing job finding and mentoring platforms, LinkedIn and Handshake, highlights their strengths, weaknesses, opportunities, and threats. 
           These insights guide Abile’s strategy to address gaps and provide a superior mentorship experience.
         </p>
       </div>
@@ -257,63 +273,60 @@ const AbileCaseStudy = () => {
       </div>
     </section>
 
-     {/* User Persona Section*/}
+  {/* User Persona Section*/}
     <section className="case-study-section user-persona">
-            <h2><strong>User Persona</strong></h2>
-            <p>
-              To ensure Abile meets the needs of its target audience, a detailed user persona was created based on research and user feedback.
-            </p>
-            
-            {/* User Persona Section */}
-            <section className="user-persona-section">
-              <div className="persona-image">
-                <img
-                  src={Persona}
-                  alt="User Persona - Sarah Thompson"
-                  className="persona-photo"
-                />
-                <ul>
-                  <li><strong>Age:</strong> 28</li>
-                  <li><strong>Occupation:</strong> Marketing Specialist</li>
-                  <li><strong>Location:</strong> Denver, Colorado</li>
-                  <li><strong>Education:</strong> Bachelor's Degree in Communications </li>
-                  <li><strong>Tech Savviness:</strong> Intermediate </li>
-                </ul>
-              </div>
-    
+    <h2><strong>User Persona</strong></h2>
+    <p>
+      To ensure Abile meets the needs of its target audience, a detailed user persona was created based on research and user feedback.
+    </p>
+    <section className="user-persona-section">
+      <div className="persona-image">
+        <img
+          src={Persona}
+          alt="User Persona - Sarah Thompson"
+          className="persona-photo"
+        />
+        <ul>
+          <li><strong>Age:</strong> 28</li>
+          <li><strong>Occupation:</strong> Marketing Specialist</li>
+          <li><strong>Location:</strong> Denver, Colorado</li>
+          <li><strong>Education:</strong> Bachelor's Degree in Communications</li>
+          <li><strong>Tech Savviness:</strong> Intermediate</li>
+        </ul>
+      </div>
       <div className="persona-details">
         <h3>Meet Sarah</h3>
         <p>
-          Sarah is a marketing specialist who has recently decided to pivot her career into data analytics, 
-          a field she’s passionate about but relatively new to. She has a busy schedule and is balancing her 
+          Sarah is a marketing specialist who has recently decided to pivot her career into data analytics,
+          a field she’s passionate about but relatively new to. She has a busy schedule and is balancing her
           current job while trying to upskill through online courses and certifications.
         </p>
         <ul>
-          <li><strong>Challenges:</strong> 
+          <li><strong>Challenges:</strong>
             <ul>
-              <li class="bullet-point">Overwhelmed by the vast amount of information online.</li>
-              <li class="bullet-point">Struggles to find credible sources of guidance.</li>
-              <li class="bullet-point">Needs immediate answers but often waits days for responses on forums.</li>
+              <li className="bullet-point">Overwhelmed by the vast amount of information online.</li>
+              <li className="bullet-point">Struggles to find credible sources of guidance.</li>
+              <li className="bullet-point">Needs immediate answers but often waits days for responses on forums.</li>
             </ul>
           </li>
           <li><strong>Needs:</strong>
             <ul>
-              <li class="bullet-point">A reliable platform to connect with vetted experts.</li>
-              <li class="bullet-point">An intuitive and accessible interface for scheduling and communication.</li>
-              <li class="bullet-point">Personalized guidance to make the most of her learning time.</li>
+              <li className="bullet-point">A reliable platform to connect with vetted experts.</li>
+              <li className="bullet-point">An intuitive and accessible interface for scheduling and communication.</li>
+              <li className="bullet-point">Personalized guidance to make the most of her learning time.</li>
             </ul>
           </li>
-          <li><strong>Goals:</strong> 
+          <li><strong>Goals:</strong>
             <ul>
-              <li class="bullet-point">Gain confidence in understanding technical concepts in her new field.</li>
-              <li class="bullet-point">Connect with an expert who can provide tailored guidance.</li>
-              <li class="bullet-point">Get quick, actionable advice without committing to long, formal sessions.</li>
+              <li className="bullet-point">Gain confidence in understanding technical concepts in her new field.</li>
+              <li className="bullet-point">Connect with an expert who can provide tailored guidance.</li>
+              <li className="bullet-point">Get quick, actionable advice without committing to long, formal sessions.</li>
             </ul>
           </li>
         </ul>
       </div>
-      </section>
     </section>
+</section>
 
   {/* Wireframes Section */}
 <section className="case-study-section abile-wireframing-section">
@@ -371,7 +384,102 @@ const AbileCaseStudy = () => {
         </figure>
       </div>
     </section>
+
+{/* Usability & testing iterations */}
+  <section className="case-study-section abile-usability-section">
+  <h3 className="usability"><strong>Usability Testing & Iterations</strong></h3>
+  <p>
+          To evaluate key features, I conducted usability testing with 5 participants, 
+          guiding them through tasks and gathering feedback via surveys to identify areas of friction. 
+          The insights helped refine the app’s layout, interface, and accessibility.
+          Below are the improvements made based on user feedback after completing tasks like 
+          signing in, navigating the home screen, and using the messaging center.
+        </p>
+      <div className="abile-usability-container">
+        <figure className="abile-usability-figure">
+          <img src={sign_in} alt="Post a discussion forum task" className="sign-in" />
+          <figcaption className="abile-usability-caption">
+          <strong>Sign-In Process:</strong>
+                <li class="bullet-point">A "Remember Me" option was added for convenience.</li> 
+                <li class="bullet-point">Improved accessibility with labels and placeholders.</li>
+          </figcaption>
+        </figure>
+
+        <figure className="abile-usability-figure">
+          <img src={home_screen} alt="Search & apply for jobs task" className="home-screen" />
+          <figcaption className="abile-usability-caption">
+            <p><strong>Home Screen Navigation: </strong>
+                <li class="bullet-point">Replaced hover menus with static buttons for easier interaction.</li>
+                <li class="bullet-point">A top search bar was added for faster navigation.</li></p>
+          </figcaption>
+        </figure>
+
+        <figure className="abile-usability-figure">
+          <img src={messaging_center} alt="Third wireframe task" className="messaging-center" />
+          <figcaption className="abile-usability-caption"> 
+          <p><strong>Messaging Center</strong>
+          <li class="bullet-point">Included "My Mentor" badges for clarity.</li>
+          <li class="bullet-point">Introduced notification dots for unread messages.</li> </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+{/* Final Prototype */}
+  <section className="case-study-section abile-prototype-section">
+    <h3 className="usability"><strong>Final Prototype</strong></h3>
+    <p>Problem: How can I help reduce the problems with loneliness to allow users to feel calm and relaxed throughout their day or at night?</p>
+    
+    <h3 className="prototype">Product Solutions:</h3>
+    
+    <div className="abile-solution">
+      <img src={mentor} alt="Search & apply for jobs task" className="mentor-screen" />
+      <div className="abile-solution-text">
+        <p className="bullet-point"><strong>Mentor Matching:</strong> Users can browse and select mentors upon registration.</p>
+      </div>
     </div>
+    
+    <div className="abile-solution">
+    
+      <div className="abile-solution-text">
+        <p className="bullet-point"><strong>Live Video Calls:</strong> Users can prepare for interviews or discuss career strategies.</p>
+        
+      </div>
+      <img src={video} alt="Search & apply for jobs task" className="abile-video" />
+    </div>
+    
+    <div className="abile-solution">
+      <img src={discussion} alt="Search & apply for jobs task" className="abile-discussion" />
+      <div className="abile-solution-text">
+        <p className="bullet-point"><strong>Discussion Forums:</strong> Users can upload materials for peer or mentor feedback.</p>
+      </div>
+    </div>
+
+    <p className="highlight">
+    <h3 className="usability"><strong>Challenge</strong></h3>
+          The biggest challenge was finding suitable users unfamiliar with expert apps. 
+      Overcoming this obstacle provided valuable insights into making Abile more intuitive and accessible.
+    
+      This project highlighted the value of:
+      <ul>
+        <li className="bullet-point">Iterative Design: Wireframing saved time by resolving usability issues early.</li>
+        <li className="bullet-point">Adaptable Research Methods: Social media platforms proved effective for finding interviewees.</li>
+      </ul>
+
+
+    
+    <div className="abile-video-container">
+      <video controls width="100%" poster="thumbnail.jpg">
+        <source src="{Prototype}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p className="abile-video-summary">
+        This video showcases the final prototype, illustrating how features like journaling, meditation, relaxation exercises, and the reward system work together to enhance user well-being.
+      </p>
+    </div>
+    </p>
+  </section>
+</div>
   );
 };
 
