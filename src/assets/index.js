@@ -52,7 +52,7 @@ import space from './project/space-hub.png';
 
 import znooz from './project/znooz_case_cover.png';
 import abile from './project/abile_case_cover.png';
-
+import zouliful from './project/zoul_cover.jpg';
 
 export {
   bwmap,
@@ -102,4 +102,5 @@ export {
   microverse,
   znooz,
   abile,
+  zouliful,
 };

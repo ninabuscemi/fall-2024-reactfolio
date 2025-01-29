@@ -19,8 +19,6 @@ import HighFi2 from '../../assets/znooz/high-fi-2.png';
 import HighFi3 from '../../assets/znooz/high-fi-3.png';
 import Prototype from '../../assets/znooz/Znooz.mp4';
 
-
-
 const ZnoozCaseStudy = () => {
   // References for sections
   const problemRef = useRef(null);

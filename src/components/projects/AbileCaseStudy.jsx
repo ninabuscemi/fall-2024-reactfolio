@@ -39,7 +39,7 @@ const AbileCaseStudy = () => {
       </div>
 
   {/* Introduction Section */}
-  <section className="case-study-section introduction-section">
+  <section className="intro-study-section introduction-section">
   <h1>Abile Expert App</h1>
   <h2>Project Overview</h2>
   <p>
@@ -136,7 +136,7 @@ const AbileCaseStudy = () => {
     </div>
 
   {/* Problem Statement Section */}
-    <section className="case-study-section discovery-section">
+    <section className="prob-study-section discovery-section">
     {/* Discovery Section */}
     <div className="abile-problem-container">
       <img
@@ -457,7 +457,7 @@ const AbileCaseStudy = () => {
 
     <p className="highlight">
     <h3 className="usability"><strong>Challenge</strong></h3>
-          The biggest challenge was finding suitable users unfamiliar with expert apps. 
+      The biggest challenge was finding suitable users unfamiliar with expert apps. 
       Overcoming this obstacle provided valuable insights into making Abile more intuitive and accessible.
     
       This project highlighted the value of:
@@ -465,20 +465,27 @@ const AbileCaseStudy = () => {
         <li className="bullet-point">Iterative Design: Wireframing saved time by resolving usability issues early.</li>
         <li className="bullet-point">Adaptable Research Methods: Social media platforms proved effective for finding interviewees.</li>
       </ul>
-
-
-    
-    <div className="abile-video-container">
-      <video controls width="100%" poster="thumbnail.jpg">
-        <source src="{Prototype}" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <p className="abile-video-summary">
-        This video showcases the final prototype, illustrating how features like journaling, meditation, relaxation exercises, and the reward system work together to enhance user well-being.
-      </p>
-    </div>
-    </p>
-  </section>
+   <div className="abile-video-container">
+  <video controls width="100%" poster="thumbnail.jpg">
+    <source src="your-video-file.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <p className="abile-video-summary">
+    Abile is a career mentorship app designed to empower users by connecting them with industry 
+    experts. Through features like expert Q&A, short video sessions, and personalized feedback, 
+    Abile provides users with the confidence and guidance needed to navigate their career paths effectively.
+  </p>
+  <a 
+    href="https://xd.adobe.com/view/4e624b95-085c-4a41-89bb-c248427087d7-1b31/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="abile-prototype-button"
+  >
+    View Prototype
+        </a>
+        </div>
+       </p>
+    </section>
 </div>
   );
 };

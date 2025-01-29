@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { About, Contact, Experience, Hero, Navbar, Tech, Projects } from './components';
 import ZnoozCaseStudy from './components/projects/ZnoozCaseStudy'; // Adjust path as needed
 import AbileCaseStudy from './components/projects/AbileCaseStudy'; // Adjust path as needed
+import ZoulifulCaseStudy from './components/projects/ZoulifulCaseStudy'; // Adjust path as needed
 import ScrollToTop from './components/ScrollToTop'; // Add the ScrollToTop component
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           />
           <Route path="/projects/ZnoozCaseStudy" element={<ZnoozCaseStudy />} />
           <Route path="/projects/AbileCaseStudy" element={<AbileCaseStudy />} />
+          <Route path="/projects/ZoulifulCaseStudy" element={<ZoulifulCaseStudy />} />
         </Routes>
         <ScrollToTop /> {/* Add the ScrollToTop component here */}
       </div>

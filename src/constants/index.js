@@ -29,6 +29,7 @@ import {
   microverse,
   znooz,
   abile,
+  zouliful,
 } from '../assets';
 
 export const navLinks = [
@@ -217,7 +218,7 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
+    name: 'Zouliful',
     description: 'This is a single-page calculator app built with React',
     tags: [
       {
@@ -233,7 +234,8 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
+    image: zouliful,
+    caseStudyPath: '/projects/ZoulifulCaseStudy',
   },
   {
     id: 'project-4',
@@ -276,8 +278,6 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
     ],
     image: nyeusi,
   },
-
-  
 ];
 
 export { services, technologies, experiences, projects };
