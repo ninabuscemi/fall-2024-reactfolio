@@ -341,29 +341,29 @@ html {
 }
 
 /* Wireframing & Solutions Section */
-.wireframing-section {
+.zouliful-wireframing-section {
   padding: 30px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+  max-width: 1200px;
 }
 
-.wireframing-title {
+.zouliful-wireframing-title {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.wireframing-title h2 {
+.zouliful-wireframing-title h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.wireframing-title p {
+.zouliful-wireframing-title p {
   font-size: 1rem;
   color: #555;
-  max-width: 800px;
   margin: 0 auto;
 }
 
-.wireframing-content {
+.zouliful-wireframing-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -372,48 +372,49 @@ html {
   margin-top: 20px;
 }
 
-.wireframe-images {
+.zouliful-wireframe-images {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 350px;
 }
 
-.image-container {
+.zouliful-image-container {
   text-align: center;
 }
 
-.wireframe-image {
+.zouliful-wireframe-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-caption {
+.zouliful-image-caption {
   font-size: 0.9rem;
   color: #666;
   margin-top: 10px;
 }
 
-.wireframe-text {
+.zouliful-wireframe-text {
   flex: 1;
   padding-left: 20px;
 }
 
-.wireframe-text h3 {
+.zouliful-wireframe-text h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.wireframe-text ul {
+.zouliful-wireframe-text ul {
   margin-top: 10px;
   padding-left: 20px;
   list-style-type: disc;
 }
 
-.wireframe-text li {
+.zouliful-wireframe-text li {
   margin-bottom: 10px;
   font-size: 1rem;
 }

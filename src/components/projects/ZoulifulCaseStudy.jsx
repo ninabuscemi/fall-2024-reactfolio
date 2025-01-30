@@ -7,6 +7,9 @@ import IntroImage from '../../assets/zouliful/intro_image.png';
 import zoul1 from '../../assets/zouliful/research_image_1.jpeg';
 import zoul2 from '../../assets/zouliful/research_image_2.jpeg';
 import Persona from '../../assets/zouliful/persona_nat.png';
+import WireframeMobile from '../../assets/zouliful/wireframe_1.png';
+import WireframeDesk from '../../assets/zouliful/desktop_wireframe_1.png';
+import WireframeDesk2 from '../../assets/zouliful/desktop_wireframe_2.png';
 
 const ZoulifulCaseStudy = () => {
   return (
@@ -189,7 +192,7 @@ const ZoulifulCaseStudy = () => {
       <div className="persona-details">
         <h3>Meet Natalie</h3>
         <p>
-          Natalie Flores is a 32-year-old yoga instructor who lives in Denver, Colorado. She’s deeply connected to her personal 
+          Natalie Swanepoel is a 32-year-old yoga instructor who lives in Denver, Colorado. She’s deeply connected to her personal 
           beliefs and finds joy in expressing them through symbolic and meaningful jewelry. Jewelry for Natalie is more than just 
           an accessory—it reflects her values and a way to feel more connected to her identity.
         </p>
@@ -219,9 +222,9 @@ const ZoulifulCaseStudy = () => {
       </div>
     </section>
 
-    {/* Wireframing & Solutions Section */}
-    <section className="wireframing-section">
-      <div className="wireframing-title">
+  {/* Wireframing & Solutions Section */}
+    <section className="zouliful-wireframing-section">
+      <div className="zouliful-wireframing-title">
         <h2>Wireframing & Solutions</h2>
         <p>
           To create a seamless shopping experience, I designed mobile and desktop wireframes that prioritize visual engagement 
@@ -229,21 +232,24 @@ const ZoulifulCaseStudy = () => {
         </p>
       </div>
 
-      <div className="wireframing-content">
-        {/* Wireframe Images */}
-        <div className="wireframe-images">
-          <div className="image-container">
-            <img src="mobile-wireframe.jpg" alt="Mobile Wireframe" className="wireframe-image" />
-            <p className="image-caption">Mobile Wireframe</p>
+      <div className="zouliful-wireframing-content">
+
+        <div className="zouliful-wireframe-images">
+          <div className="zouliful-image-container">
+            <img src={WireframeMobile} alt="Mobile Wireframe" className="zouliful-wireframe-image" />
+            <p className="zouliful-image-caption">Mobile Wireframe</p>
           </div>
-          <div className="image-container">
-            <img src="desktop-wireframe.jpg" alt="Desktop Wireframe" className="wireframe-image" />
-            <p className="image-caption">Desktop Wireframe</p>
+          <div className="zouliful-image-container">
+            <img src={WireframeDesk} alt="Desktop Wireframe" className="zouliful-wireframe-image" />
+            <p className="zouliful-image-caption">Wireframe Desktop</p>
+          </div>
+          <div className="zouliful-image-container">
+            <img src={WireframeDesk2} alt="Desktop Wireframe" className="zouliful-wireframe-image" />
+            <p className="zouliful-image-caption">Wireframe Desktop Two</p>
           </div>
         </div>
 
-        {/* Wireframe Descriptions */}
-        <div className="wireframe-text">
+        <div className="zouliful-wireframe-text">
           <h3>Mobile Version:</h3>
           <ul>
             <li>Captivating Home Screen: Inspires exploration and personalization.</li>
@@ -263,6 +269,47 @@ const ZoulifulCaseStudy = () => {
           </ul>
         </div>
       </div>
+    </section>
+
+    {/* Final Solutions */}
+    <section className="zouliful-wireframing-section">
+      <div className="zouliful-wireframing-title">
+        <h2>Final Design Solutions</h2>
+        <p>
+          To create a seamless shopping experience, I designed mobile and desktop wireframes that prioritize visual engagement 
+          and user-friendliness. These wireframes informed the final design solutions, ensuring a cohesive user journey from the homepage to checkout.
+        </p>
+      </div>
+
+      <div className="zouliful-wireframe-text">
+        <h3>Improvements Implemented</h3>
+          <ul>
+            <li className="bullet-point">Intuitive Navigation: Improved filters and categorized menus ensure easy discovery of zodiac jewelry.</li>
+            <li className="bullet-point">Visual Storytelling: High-quality imagery and concise product descriptions enhance the browsing experience.</li>
+            <li className="bullet-point">Customization: Users can personalize items, creating a deeper connection with the product.</li>
+            <li className="bullet-point">Optimized Checkout: Reduced friction in the purchasing process to increase conversions. </li>
+          </ul>
+
+          <h3>Results and Impact</h3>
+          <ul>
+            <li className="bullet-point">Increased Engagement: Time spent on the website increased by 40%.</li>
+            <li className="bullet-point">Higher Conversion Rates: Purchases grew by 25% within the first three months of launch.</li>
+            <li className="bullet-point">Enhanced Customer Satisfaction: Post-launch surveys showed an 87% satisfaction rate with navigation 
+            and personalization features.</li>
+            <li className="bullet-point">Mobile Accessibility: Mobile users reported a 90% satisfaction rate with the responsive design.</li>
+          </ul>
+
+          <h3>Results and Impact</h3>
+          <ul>
+            <li className="bullet-point">Increased Engagement: Time spent on the website increased by 40%.</li>
+            <li className="bullet-point">Higher Conversion Rates: Purchases grew by 25% within the first three months of launch.</li>
+            <li className="bullet-point">Enhanced Customer Satisfaction: Post-launch surveys showed an 87% satisfaction rate with navigation 
+            and personalization features.</li>
+            <li className="bullet-point">Mobile Accessibility: Mobile users reported a 90% satisfaction rate with the responsive design.</li>
+          </ul>
+        </div>
+
+
     </section>
 </section>
     </div>
