@@ -36,7 +36,7 @@ const App = () => {
           <Route path="/projects/AbileCaseStudy" element={<AbileCaseStudy />} />
           <Route path="/projects/ZoulifulCaseStudy" element={<ZoulifulCaseStudy />} />
         </Routes>
-        <ScrollToTop /> {/* Add the ScrollToTop component here */}
+        <ScrollToTop />
       </div>
     </BrowserRouter>
   );
