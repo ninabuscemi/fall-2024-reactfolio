@@ -45,10 +45,10 @@ const ProjectCard = ({
           className="absolute bottom-0 p-8 justify-start w-full 
           flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
           <h2 className="font-bold sm:text-[32px] text-[24px] 
-            text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+            text-white uppercase font-beckman sm:mt-0 -mt-[1rem]">
             {name}
           </h2>
-          <p className="text-silver sm:text-[14px] text-[12px] 
+          <p className="text-white sm:text-[14px] text-[12px] 
             max-w-3xl sm:leading-[24px] leading-[18px]
             font-poppins tracking-[1px]">
             {description}
@@ -57,12 +57,12 @@ const ProjectCard = ({
   className="live-demo flex justify-between 
     sm:text-[16px] text-[14px] text-timberWolf 
     font-bold font-beckman items-center py-5 pl-2 pr-3 
-    whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-    w-[125px] h-[46px] rounded-[10px] glassmorphism 
+    whitespace-nowrap gap-1 sm:w-[190px] w-[170px]  {/* Adjusted width */}
+    sm:h-[50px] h-[46px] rounded-[10px] glassmorphism 
     sm:mt-[22px] mt-[16px] hover:bg-battleGray 
     hover:text-eerieBlack transition duration-[0.2s] 
     ease-in-out"
-  onClick={handleCardClick} // Navigate to case study
+  onClick={handleCardClick}
 >
   <img
     src={pineapple}

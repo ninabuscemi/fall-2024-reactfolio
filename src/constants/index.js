@@ -30,6 +30,7 @@ import {
   znooz,
   abile,
   zouliful,
+  warrenpod,
 } from '../assets';
 
 export const navLinks = [
@@ -185,7 +186,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Znooz',
-    description: 'A comic characters list app that displays Marvel characters.',
+    description: 'A mobile app that helps reduce nighttime loneliness with meditation and calming music',
     tags: [
       { name: 'react', color: 'blue-text-gradient' },
       { name: 'mongodb', color: 'green-text-gradient' },
@@ -198,7 +199,7 @@ const projects = [
     id: 'project-2',
     name: 'Abile',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'An app that connects users with experts and tools for a confident career transition.',
     tags: [
       {
         name: 'react',
@@ -219,7 +220,7 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   {
     id: 'project-3',
     name: 'Zouliful',
-    description: 'This is a single-page calculator app built with React',
+    description: 'An e-commerce site and mobile version showcasing personalized zodiac jewelry, tailored to each sign\'s preferences.',
     tags: [
       {
         name: 'nextjs',
@@ -239,8 +240,8 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Warren Podiatry',
+    description: 'COMING SOON',
     tags: [
       {
         name: 'nextjs',
@@ -255,29 +256,9 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-  },
+    image: warrenpod,
+    caseStudyPath: '',
+  }
 ];
 
 export { services, technologies, experiences, projects };
