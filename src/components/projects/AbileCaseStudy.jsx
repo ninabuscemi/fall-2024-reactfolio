@@ -33,7 +33,7 @@ const AbileCaseStudy = () => {
             className="abile-hero-image"
           />
           <div className="aible-hero-overlay">
-            <h1 className="abile-hero-title">Abile Case Study</h1>
+           {/* <h1 className="abile-hero-title"></h1> */}
           </div>
         </div>
       </div>
@@ -47,17 +47,7 @@ const AbileCaseStudy = () => {
     empowering users to navigate new career paths with confidence. Whether it’s posing quick questions, 
     seeking portfolio feedback, or scheduling video sessions, Abile makes expert guidance accessible and intuitive.
   </p>
-
- <li class="bullet-point">Type: Mobile App</li>
-
- <li class="bullet-point">Role: UX/UI Designer & Researcher</li>
-
- <li class="bullet-point">Tools Used: Figma, Adobe Illustrator, Miro</li>
-
- <li class="bullet-point">Duration: 3 months</li>
-
-<li class="bullet-point">Deliverables: Low- and high-fidelity wireframes, clickable prototype, usability test findings, final design solutions</li>
-  {/* Live Prototype Button */}
+    {/* Live Prototype Button */}
   <a
     href="https://your-prototype-link.com" // Replace with your actual prototype link
     target="_blank"
@@ -66,6 +56,16 @@ const AbileCaseStudy = () => {
   >
     View Live Prototype
   </a>
+<p>Type: Mobile App</p>
+
+<p>Role: UX/UI Designer & Researcher</p>
+
+<p>Tools Used: Figma, Adobe Illustrator, Miro</p>
+
+<p>Duration: 3 months</p>
+
+Deliverables: Low- and high-fidelity wireframes, clickable prototype, usability test findings, final design solutions
+
 
   {/* Two Columns for Key Features and Design Goals */}
   <div className="abile-container">

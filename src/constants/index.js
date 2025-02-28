@@ -241,7 +241,7 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
   {
     id: 'project-4',
     name: 'Warren Podiatry',
-    description: 'COMING SOON',
+    description: 'COMING SOON - desktop and mobile-friendly website for Warren Podiatry to improve appointment scheduling, patient engagement, and online visibility.',
     tags: [
       {
         name: 'nextjs',
@@ -257,7 +257,7 @@ caseStudyPath: '/projects/AbileCaseStudy', // Path to case study page
       },
     ],
     image: warrenpod,
-    caseStudyPath: '',
+    caseStudyPath: '/projects/WarrenCaseStudy',
   }
 ];
 

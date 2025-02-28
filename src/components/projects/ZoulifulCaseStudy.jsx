@@ -298,15 +298,6 @@ const ZoulifulCaseStudy = () => {
             and personalization features.</li>
             <li className="bullet-point">Mobile Accessibility: Mobile users reported a 90% satisfaction rate with the responsive design.</li>
           </ul>
-
-          <h3>Results and Impact</h3>
-          <ul>
-            <li className="bullet-point">Increased Engagement: Time spent on the website increased by 40%.</li>
-            <li className="bullet-point">Higher Conversion Rates: Purchases grew by 25% within the first three months of launch.</li>
-            <li className="bullet-point">Enhanced Customer Satisfaction: Post-launch surveys showed an 87% satisfaction rate with navigation 
-            and personalization features.</li>
-            <li className="bullet-point">Mobile Accessibility: Mobile users reported a 90% satisfaction rate with the responsive design.</li>
-          </ul>
         </div>
 
 

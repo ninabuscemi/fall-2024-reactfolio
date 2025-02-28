@@ -71,6 +71,7 @@ const ProjectCard = ({
       w-[30px] h-[30px] object-contain"
   />
   VIEW CASE STUDY
+
 </button>
         </div>
       )}
